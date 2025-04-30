@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react"; 
+import  { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {["Home", "Browse", "Order", "Contact"].map((item, index) => (
+            {["Home", "Browse", "Order","Help"].map((item, index) => (
               <motion.a
                 key={index}
                 href={`/${item.toLowerCase()}`}
@@ -32,6 +33,7 @@ const Navbar = () => {
                 {item}
               </motion.a>
             ))}
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -53,7 +55,7 @@ const Navbar = () => {
         transition={{ duration: 0.4 }}
       >
         <ul className="py-4 space-y-4 text-center">
-          {["Home", "Menu", "Order", "Contact"].map((item, index) => (
+          {["Home", "Menu", "Order", "Help"].map((item, index) => (
             <li key={index}>
               <a
                 href={`#${item.toLowerCase()}`}

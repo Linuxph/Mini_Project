@@ -11,7 +11,8 @@ const Home = () => {
   return (
     <div className="min-h-screen w-full bg-gray-50">
       <Slider />
-      <Recommended />
+      <Recommended  imageUrl = "./public/rec/d13.jpg"/>
+      
       <PopularCategories />
       <TopRatedRestaurants />
       {/* <SpecialDeals /> */}

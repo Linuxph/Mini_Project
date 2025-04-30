@@ -1,9 +1,9 @@
 import React from 'react'
 
 const restaurants = [
-  { name: "Pizza Palace", rating: 4.8, img: "/images/restaurant1.jpg" },
-  { name: "Burger Hub", rating: 4.7, img: "/images/restaurant2.jpg" },
-  { name: "Sweet Tooth", rating: 4.9, img: "/images/restaurant3.jpg" },
+  { name: "Paratha Palace", rating: 4.8, img: "/public/rec/d10.jpg" },
+  { name: "Dal", rating: 4.7, img: "/public/rec/d11.jpg" },
+  { name: "Tasty PattaGobhi", rating: 4.9, img: "/public/rec/d12.jpg" },
 ];
 
 const TopRatedRestaurants = () => {

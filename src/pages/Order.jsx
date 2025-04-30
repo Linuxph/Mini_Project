@@ -1,6 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Order = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/payment')
+  };
+
+
+
   const item = {
     name: "Delicious Burger",
     image: "your-food-image.jpg",
@@ -60,7 +69,7 @@ const Order = () => {
 
         {/* Proceed to Payment Button */}
         <div className="flex justify-center">
-          <button className="bg-blue-500 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-600 transition">
+          <button  onClick={handleClick} className="bg-blue-500 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-600 transition">
             Proceed to Payment
           </button>
         </div>

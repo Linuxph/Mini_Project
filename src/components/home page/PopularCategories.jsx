@@ -1,10 +1,10 @@
 import React from 'react'
 
 const categories = [
-  { title: "Pizza", img: "/images/pizza.jpg" },
-  { title: "Burger", img: "/images/burger.jpg" },
-  { title: "Dessert", img: "/images/dessert.jpg" },
-  { title: "Beverages", img: "/images/beverages.jpg" },
+  { title: "Paneer", img: "/public/rec/d1.jpg" },
+  { title: "Rajma", img: "/public/rec/d5.jpg" },
+  { title: "Bhature", img: "/public/rec/d3.jpg" },
+  { title: "Bhature with Chhole ", img: "/public/rec/d4.jpg" },
 ];
 
 const PopularCategories = () => {
